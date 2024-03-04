@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+
+    <!-- Ini adalah bagian dari CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="todo-wrapper">
+
+    <!-- Ini adalah bagian dari <h2> -->
+    <h2>My To Do List</h2>
+
+    <!-- Ini adalah bagian dari <p> -->
+    <p>
+        Double-click an item to mark it complete
+    </p>
+
+    <!-- Ini adalah bagian dari <form> -->
+    <form name="todo-adder">
+
+        <!-- Ini adalah bagian dari <input> -->
+        <input type="text" id="todo-entry-box">
+
+    </form>
+
+    <!-- Ini adalah bagian dari <button> dengan class="pretty-button"  -->
+    <button class="pretty-button" id="add-button">Add</button>
+
+    <!-- Ini adalah bagian dari <br> -->
+    <br>
+
+    <!-- Ini adalah bagian dari <ol> dengan id="todo-list" -->
+    <ol id="todo-list"></ol>
+
+    <!-- Ini adalah bagian dari <div> dengan class="control-wrapper" -->
+    <div id="control-wrapper">
+        <!-- Ini adalah bagian dari <button> dengan class="pretty-button" dan id="clear-completed-button" -->
+        <button class="pretty-button" id="clear-completed-button" onclick="clearCompletedToDoItems()">Clear completed</button>
+
+        <!-- Ini adalah bagian dari <button> dengan class="pretty-button" dan id="empty-button" -->
+        <button class="pretty-button" id="empty-button" onclick="emptyList()">Empty list</button>
+        
+        <!-- Ini adalah bagian dari <button> dengan class="pretty-button" dan id="save-button" -->
+        <button class="pretty-button" id="save-button" onclick="saveList()">Save list</button>
+    </div>
+
+</div>
+
+<!-- Ini adalah bagian dari JS eksternal -->
+<script src="script.js"></script>
+
+</body>
+</html>
